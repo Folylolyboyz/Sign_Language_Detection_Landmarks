@@ -24,8 +24,9 @@ def model_pred(image_path):
                     data_coordinates.append(y)
         return data_coordinates
 
-url = "http://127.0.0.1:8000/predict"
-path = "./data/A/2.jpg"
+# url = "http://127.0.0.1:5000/predict"
+url = "https://sign-language-hosting-production.up.railway.app/predict"
+path = "./images/5.jpg"
 data_coordinates = model_pred(path)
 
 data_to_send = {
